@@ -1,0 +1,93 @@
+
+.city{
+  font-size: 80px;
+}
+.name {
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+font-size: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Gochi+Hand');
+
+body{
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  background: #270F34; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  contain: content;
+  overflow: clip;
+
+}
+
+h1{
+  font-size: 2em;
+  font-family: 'Caveat', cursive;
+}
+
+h1 span{
+  display: block;
+  float: left;
+  animation: animate 2.25s linear infinite;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+  color: #111;
+}
+
+h1 span:nth-child(1){
+  animation-delay: 0s;
+}
+h1 span:nth-child(2){
+  animation-delay: .25s;
+}
+h1 span:nth-child(2){
+  animation-delay: .5s;
+}
+h1 span:nth-child(3){
+  animation-delay: .75s;
+}
+h1 span:nth-child(4){
+  animation-delay: 1s;
+}
+h1 span:nth-child(5){
+  animation-delay: 1.25s;
+}
+h1 span:nth-child(6){
+  animation-delay: 1.5s;
+}
+h1 span:nth-child(7){
+  animation-delay: 1.75s;
+}
+
+
+
+
+@keyframes animate {
+  0%, 100%{
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #d50d0d,
+      0 0 20px #ff2600,
+      0 0 40px #ff0000,
+      0 0 80px #ff0000,
+      0 0 120px #ff0000,
+      0 0 200px #ff0000,
+      0 0 300px #ff0000,
+      0 0 400px #ff0000;
+  }
+  5%, 95%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+.my-profile{
+  width: 600px;
+
+}
